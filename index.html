@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css">
+  </head>
+  <style media="screen">
+    .col-md-9{
+      background-color: skyblue;
+      border: .5px solid black;
+    }
+    .col-md-6{
+      background-color: plum;
+      border: .5px solid black;
+    }
+    .col-md-4{
+      background-color: tomato;
+      border: .5px solid black;
+    }
+    .col-md-3{
+      background-color: aquamarine;
+      border: .5px solid black;
+    }
+  </style>
+  <body>
+    <div class="container-fluid">
+      <!-- Proper alignment and padding - ROWS   -->
+      <h1>Nesting Columns</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-3">nested columns</div>
+            <div class="col-md-3 col-md-offset-3">nested columns</div>
+            <div class="col-md-3">nested columns</div>
+            <div class="col-md-3">nested columns</div>
+          </div>
+        </div>
+        <div class="col-md-4">my columns</div>
+        <div class="col-md-4">my columns</div>
+      </div>
+      <h1>Offsetting Columns</h1>
+      <div class="row">
+        <div class="col-md-4">Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake. Topping gingerbread fruitcake sweet roll croissant. Sweet roll halvah powder chocolate marshmallow. Gummies lemon drops sweet chupa chups lollipop halvah halvah carrot cake topping.</div>
+        <div class="col-md-4 col-md-offset-1">Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake. Topping gingerbread fruitcake sweet roll croissant. Sweet roll halvah powder chocolate marshmallow. Gummies lemon drops sweet chupa chups lollipop halvah halvah carrot cake topping.</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake. Topping gingerbread fruitcake sweet roll croissant. Sweet roll halvah powder chocolate marshmallow. Gummies lemon drops sweet chupa chups lollipop halvah halvah carrot cake topping.
+        </div>
+        <div class="col-md-3 col-md-offset-1">Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake. Topping gingerbread fruitcake sweet roll croissant. Sweet roll halvah powder chocolate marshmallow. Gummies lemon drops sweet chupa chups lollipop halvah halvah carrot cake topping.
+        </div>
+        <div class="col-md-3 col-md-offset-1">Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake. Topping gingerbread fruitcake sweet roll croissant. Sweet roll halvah powder chocolate marshmallow. Gummies lemon drops sweet chupa chups lollipop halvah halvah carrot cake topping.
+        </div>
+      </div>
+      <h1>Floats</h1>
+      <div class="row">
+        <div class="pull-left" style="background-color: orange; ">
+          Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake.
+        </div>
+        <div class="pull-right" style="background-color: orange; ">
+          Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake.
+        </div>
+      </div>
+      <h1>Centering a Column</h1>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake. Topping gingerbread fruitcake sweet roll croissant. Sweet roll halvah powder chocolate marshmallow. Gummies lemon drops sweet chupa chups lollipop halvah halvah carrot cake topping.</div>
+      </div>
+      <h4>What about just an element? </h4>
+      <!-- need width for it to work  -->
+      <div class="row">
+        <div class="center-block" style="background-color: orange; width:400px;">
+          Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake.
+        </div>
+
+      </div>
+      <h1>Ordering Columns:</h1>
+      <h4> Push/Pull the column to the right/left by x columns</h4>
+      <div class="row">
+        <div class="col-md-9">BEFORE: I take up 9 columns first</div>
+        <div class="col-md-3">BEFORE: I take up 3 columns second</div>
+      </div>
+      <div class="row">
+        <div class="col-md-9 col-md-push-3">AFTER: I take up 9 columns on the right</div>
+        <div class="col-md-3 col-md-pull-9">AFTER: I take up 3 columns on the left</div>
+      </div>
+      <h1>Responsive Images</h1>
+      max-width: 100% and height: auto
+      <img src = "http://lorempixel.com/image_output/abstract-q-c-640-480-3.jpg" class = "img-responsive" alt = "Responsive image">
+      <h1>Text Manipulation</h1>
+      <p class='col-lg-6 text-left'>
+        Gummi bears gummies apple pie. Jelly-o dessert tootsie roll. Bear claw wafer marshmallow donut.
+Caramels marzipan candy canes. Gingerbread sesame snaps gingerbread cotton candy dessert jelly-o soufflé muffin dessert. Brownie sesame snaps soufflé halvah. <img src = "http://lorempixel.com/image_output/abstract-q-c-640-480-3.jpg" style='padding:0px;' class = "col-lg-3 img-responsive" alt = "Responsive image">
+Pudding oat cake tart cheesecake wafer caramels caramels cake cake. Croissant sweet roll cookie cupcake lemon drops halvah topping candy. Toffee marshmallow tart cake pastry lemon drops powder. Soufflé cake apple pie jujubes cookie liquorice pastry.
+Danish cupcake marzipan. Gingerbread marzipan biscuit tootsie roll lemon drops. Liquorice biscuit dragée jelly gummies topping. Gingerbread jelly beans pudding candy canes wafer gummies sugar plum.
+Fruitcake sugar plum gummi bears sugar plum pastry caramels cupcake. Topping gingerbread fruitcake sweet roll croissant. Sweet roll halvah powder chocolate marshmallow. Gummies lemon drops sweet chupa chups lollipop halvah halvah carrot cake topping.
+      </p>
+      <small>This content is within 'small' tag</small><br>
+      <strong>This content is within 'strong' tag</strong><br>
+      <em>This content is within 'em' tag and is rendered as italics</em><br>
+      <p class = "text-left">Left aligned text.</p>
+      <p class = "text-center">Center aligned text.</p>
+      <p class = "text-right">Right aligned text.</p>
+      <p class = "text-muted">This content is muted</p>
+      <p class = "text-primary">This content carries a primary class</p>
+      <p class = "text-success">This content carries a success class</p>
+      <p class = "text-info">This content carries a info class</p>
+      <p class = "text-warning">This content carries a warning class</p>
+      <p class = "text-danger">This content carries a danger class</p>
+      <button type="button" name="button" class='btn btn-success'>Hello</button>
+
+      <h1>Abbreviations</h1>
+      <h3><abbr title = "World Wide Web">WWW</abbr></h3>
+
+      <h1>BlockQuotes</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <blockquote>
+           This is a blockquote with a source title.
+           <small>Someone famous in <cite title = "Source Title">Source Title</cite></small>
+          </blockquote>
+
+          <blockquote class = "pull-right">This is a blockquote aligned to the right.
+             <small>Someone famous in <cite title = "Source Title">Source Title</cite></small>
+          </blockquote>
+        </div>
+      </div>
+      <h1>Tables</h1>
+      table-bordered, hover,striped, condensed, responsive
+        <table class='table table-hover'>
+           <thead>
+              <tr>
+                 <th>Name</th>
+                 <th>Age</th>
+                 <th>Phone Number</th>
+              </tr>
+           </thead>
+           <tbody>
+              <tr>
+                 <td>Bob</td>
+                 <td>24</td>
+                 <td>303-890-8901</td>
+              </tr>
+              <tr>
+                 <td>John</td>
+                 <td>56</td>
+                 <td>232-538-8390</td>
+              </tr>
+              <tr>
+                 <td>Mike</td>
+                 <td>38</td>
+                 <td>839-782-7392</td>
+              </tr>
+           </tbody>
+        </table>
+
+    </div>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
